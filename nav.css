@@ -1,24 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: #f2f5f7;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-body{
-    overflow-x: hidden;
-}
-nav{
-    height: 6rem;
-    width: 100%;
-    background-color: #131418;
-    display: flex;
-    position: fixed;
-    z-index: 10;
-}
 
-/*Styling Links*/
 .nav-links{
     display: flex;
     list-style: none; 

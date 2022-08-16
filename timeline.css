@@ -1,10 +1,5 @@
-/* 
-* General Style
-*/
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
-.body2 {
+.timelinebody {
   max-width: 1400px;
   height: 55vh;
   margin: 0 auto;
@@ -15,15 +10,15 @@
   background: #ffffff;
 }
 
-.body2 h2 {
+.timelinebody h2 {
   text-align: center;
   color: #000000;
   margin: 3em 0 0 0;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: underline;
-  text-decoration-color: #5FAEFA;
+  text-decoration-color: #ff0000;
 
 }
 
@@ -61,7 +56,7 @@
   left: -44px;
   width: 20px;
   height: 20px;
-  background: #5FAEFA;
+  background: #ff0000;
   border: 5px solid #000000;
   border-radius: 50%;
   display: block;
@@ -107,9 +102,9 @@
   overflow: hidden;
 }
 
-.body2 label {
+.timelinebody label {
   color: #000000;
-  font-size: 1.3em;
+  font-size: 1vw;
   position: absolute;
   z-index: 100;
   cursor: pointer;
@@ -117,9 +112,9 @@
   transition: transform 0.75s linear;
 }
 
-.body2 label:hover {
+.timelinebody label:hover {
   text-decoration: underline;
-  text-decoration-color: #5FAEFA;
+  text-decoration-color: #ff0000;
   text-decoration-thickness: 2px;
 }
 
@@ -131,14 +126,14 @@
   cursor: auto;
   transform: translateX(25px);
   text-decoration: underline;
-  text-decoration-color: #5FAEFA;
+  text-decoration-color: #ff0000;
   text-decoration-thickness: 2px;
 }
 .radio:checked + .relative .circle {
-  background: #00ff00;
+  background: #ff0000;
 }
 .radio:checked ~ .content {
-  max-height: 180px;
+  max-height: 220px;
   border-color: #000000;
   margin-right: 20px;
   transform: translateX(1px);
@@ -154,7 +149,7 @@
 * mobile phones 
 */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 775px) {
 #timeline {
   margin-left: 0;
   padding-left: 0;
@@ -166,7 +161,7 @@
 
 label {
   width: 100%;
-  font-size: 1.1em;
+  font-size: 5em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -197,7 +192,7 @@ label {
   margin-left: -20px;
 }
 .content p {
-  font-size: 0.9em;
+  font-size: 1vw;
   line-height: 1.4;
 }
 

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+:root {
+	font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body{
+    overflow-x: hidden;
+}
+nav{
+    height: 6rem;
+    width: 100%;
+    background-color: #131418;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Styles */
+
+.top{
+    height: 50px;
+    background-color: #333333;
+}
+
+.curved {
+    background-color: #fff;
+}
+
+
+
+.body1 {
+    justify-content: center;
+    display: flex;
+    height: 60vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    position: absolute;
+    top: 35%;
+    justify-content: center;
+    text-align: center;
+}
+
+.text span {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.text h1:hover{
+    color: #000;
+}
+
+.text p {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text p:hover{
+    color: #000;
+}
+
+
+.devider{
+    position: relative;
+    min-height: 1vh;
+    background-color: #333;
+}
+
+/* Footer */
+
+.footer{
+    background: #fff;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
