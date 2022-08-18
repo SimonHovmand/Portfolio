@@ -1,19 +1,16 @@
 
 .contact-card {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem auto;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.75);
-  margin-bottom: 1.5%;
+  margin-bottom: 1%;
   background: #555;
   line-height: 1.5;
   font-family: sans-serif;
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
-}
-.contact-card a {
-  color: inherit;
 }
 
 .contact-card:hover .photo1 {
