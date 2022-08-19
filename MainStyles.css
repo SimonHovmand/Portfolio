@@ -61,8 +61,13 @@ nav{
 }
 
 .body2 {
-    height: 55vh;
-    background-color: #000;
+    background-color: #f8f8f8;
+    height: auto;
+}
+
+.body3 {
+    background-color: #fff;
+    height: auto;
 }
 
 
@@ -83,7 +88,7 @@ nav{
     font-size: 45px;
     font-weight: bold;
     margin-top: 0;
-}
+} 
 
 .text h1:hover{
     color: #000;
@@ -113,16 +118,43 @@ nav{
     background: #fff;
 }
 
+.column1 {
+    background-color: #f8f8f8;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    height: 300px auto;
+    text-align: center;
+}
 
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: auto;
-  }
-  
-  .row:after {
+.column1 h1 {
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.column1 h2 {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.column1 p {
+    color: #000;
+    font-size: 1em;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+.column1 {
+    width: 100%;
+}
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+} 

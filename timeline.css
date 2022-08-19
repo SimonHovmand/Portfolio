@@ -14,7 +14,7 @@
   text-align: center;
   color: #000000;
   margin: 3em 0 0 0;
-  font-size: 1.5vw;
+  font-size: 2em;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -104,7 +104,7 @@
 
 .timelinebody label {
   color: #000000;
-  font-size: 1vw;
+  font-size: 1.25em;
   position: absolute;
   z-index: 100;
   cursor: pointer;
@@ -192,7 +192,7 @@ label {
   margin-left: -20px;
 }
 .content p {
-  font-size: 1vw;
+  font-size: 1em;
   line-height: 1.4;
 }
 
