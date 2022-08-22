@@ -45,12 +45,6 @@ nav{
     background-color: #333333;
 }
 
-.curved {
-    background-color: #fff;
-}
-
-
-
 .body1 {
     justify-content: center;
     display: flex;
@@ -61,7 +55,7 @@ nav{
 }
 
 .body2 {
-    background-color: #f8f8f8;
+    background-color: #eee;
     height: auto;
 }
 
@@ -112,14 +106,8 @@ nav{
     background-color: #333;
 }
 
-/* Footer */
-
-.footer{
-    background: #fff;
-}
-
 .column1 {
-    background-color: #f8f8f8;
+    background-color: #eee;
     max-width: 1000px;
     margin: auto;
     padding: 15px;
@@ -158,3 +146,9 @@ nav{
     display: table;
     clear: both;
 } 
+
+
+/* Footer */
+.curved {
+    background-color: #fff;
+}
