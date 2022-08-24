@@ -18,8 +18,10 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: underline;
-  text-decoration-color: #ff0000;
+}
 
+.timelinebody h2:hover{
+  text-decoration-color: #ff0000;
 }
 
 /*s
