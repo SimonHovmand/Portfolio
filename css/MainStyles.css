@@ -45,7 +45,7 @@ nav{
     justify-content: center;
     display: flex;
     height: 95vh;
-    background-image: url(images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -71,7 +71,7 @@ nav{
     font-weight: bold;
 } 
 .text h1:hover{
-    color: #000;
+    color: #ff0000;
 }
 .text p {
     margin-top: 5px;
@@ -80,7 +80,7 @@ nav{
     font-weight: bold;
 }
 .text p:hover{
-    color: #000;
+    color: #ff0000;
 }
 
 /* Container */
@@ -177,7 +177,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #ff0000;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -196,7 +196,7 @@ ul{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #f03030;
+	color: #ff0000;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -255,7 +255,7 @@ ul{
     display: block;
     height: 100%;
     width: 0%;
-    background-color: #5FAEFA;
+    background-color: #ff0000;
     opacity: 50%;
     position: absolute;
     transition: all ease-in-out 250ms;
