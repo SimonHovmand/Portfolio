@@ -112,12 +112,13 @@
   cursor: pointer;
   top: 17px;
   transition: transform 0.75s linear;
+  transition: all 0.5s ease;
 }
 
 .timelinebody label:hover {
   text-decoration: underline;
   text-decoration-color: #ff0000;
-  text-decoration-thickness: 2px;
+	padding-left: 8px;
 }
 
 .radio {

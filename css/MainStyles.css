@@ -67,20 +67,24 @@ nav{
 }
 .text h1 {
     color: #fff;
-    font-size: 45px;
+    font-size: 65px;
     font-weight: bold;
+    transition: all 0.5s ease;
 } 
 .text h1:hover{
     color: #ff0000;
+    padding-top: 15px;
 }
 .text p {
     margin-top: 5px;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    transition: all 0.5s ease;
 }
 .text p:hover{
     color: #ff0000;
+    padding-top: 15px;
 }
 
 /* Container */
@@ -92,10 +96,8 @@ nav{
     color: #000000;
 	font-size: 1.2em;
 	text-transform: uppercase;
-	letter-spacing: 10px;
 	text-align: center;
-	font-family: Lora, serif;
-	font-weight: 200;
+	font-weight: bold;
 }
 .container h1::before {
 	content: "─";
@@ -110,6 +112,10 @@ nav{
 .container p {
     color: #000000;
     text-align: center;
+    transition: all 0.5s ease;
+}
+.container p:hover {
+	padding-top: 8px;
 }
 .boxes {
 	margin-top: 100px;
@@ -139,7 +145,7 @@ nav{
 	margin-bottom: 0.6em;
 }
 .box1 .icon:hover {
-	color: #d8d8d8;
+	color: #999;
 }
 
 /* Footer */
