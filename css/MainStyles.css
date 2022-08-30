@@ -64,16 +64,19 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+.text:hover{
+    padding-top: 15px;
 }
 .text h1 {
     color: #fff;
     font-size: 65px;
     font-weight: bold;
-    transition: all 0.5s ease;
+    text-transform: uppercase;
 } 
 .text h1:hover{
     color: #ff0000;
-    padding-top: 15px;
 }
 .text p {
     margin-top: 5px;
@@ -84,7 +87,6 @@ nav{
 }
 .text p:hover{
     color: #ff0000;
-    padding-top: 15px;
 }
 
 /* Container */
@@ -148,6 +150,76 @@ nav{
 	color: #999;
 }
 
+
+#body-work {
+    background: #eee;
+    display: grid;
+    height: 50vh;
+    place-items: center;
+    position: relative;
+    width: 100vw;
+    z-index: 2;
+  }
+  
+#works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 0.8vw, 20px);
+    justify-content: center;
+    margin-left: 80px;
+    width: clamp(600px, 80vw, 1400px);
+}
+
+#works > .work {
+    aspect-ratio: 7 / 8;
+    background-color: rgb(200, 200, 200);
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color 250ms;
+    width: calc(25% - clamp(10px, 0.8vw, 20px));
+}
+
+#works > .work:hover {
+    backdrop-filter: blur(1vw);
+    background-color: rgba(55, 55, 55, 0.75);
+}
+
+.work > .work-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - clamp(8px, 1vw, 12px));
+    justify-content: center;
+    padding: clamp(8px, 1vw, 12px);
+}
+
+.work > .work-content > .work-pic {
+    aspect-ratio: 1;
+    border: clamp(3px, 0.4vw, 5px) solid rgb(30,30,30);
+    border-radius: 100%;
+    flex-shrink: 0;
+    height: 70%;
+    position: relative;
+}
+
+.work > .work-content > .work-pic > .work-pic-image {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 100%;
+    height: calc(100% - clamp(10px, 1.5vw, 20px));
+    margin: clamp(5px, 0.75vw, 10px);
+    object-fit: cover;
+    width: calc(100% - clamp(10px, 1.5vw, 20px));
+}
+
+.work > .work-content > .work-name {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1em, 2vw, 2em);
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* Footer */
 .container2{
 	max-width: 1500px;
@@ -182,11 +254,11 @@ ul{
 	content: '';
 	position: absolute;
 	left:0;
-	bottom: -10px;
+	bottom: -5px;
 	background-color: #ff0000;
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
+	width: 75px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -219,7 +291,7 @@ ul{
 }
 .footer-col .social-links a:hover{
 	background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
+    color: #000;    
 }
 
 /*responsive*/
