@@ -21,7 +21,7 @@
 }
 
 .timelinebody h2:hover{
-  text-decoration-color: #ff0000;
+  text-decoration-color: var(--MainColor);
 }
 
 /*s
@@ -58,7 +58,7 @@
   left: -44px;
   width: 20px;
   height: 20px;
-  background: #ff0000;
+  background: var(--MainColor);
   border: 5px solid #000000;
   border-radius: 50%;
   display: block;
@@ -117,7 +117,7 @@
 
 .timelinebody label:hover {
   text-decoration: underline;
-  text-decoration-color: #ff0000;
+  text-decoration-color: var(--MainColor);
 	padding-left: 8px;
 }
 
@@ -129,11 +129,11 @@
   cursor: auto;
   transform: translateX(25px);
   text-decoration: underline;
-  text-decoration-color: #ff0000;
+  text-decoration-color: var(--MainColor);
   text-decoration-thickness: 2px;
 }
 .radio:checked + .relative .circle {
-  background: #ff0000;
+  background: var(--MainColor);
 }
 .radio:checked ~ .content {
   max-height: 220px;

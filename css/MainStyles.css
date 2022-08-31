@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html { scroll-behavior: smooth;}
 *,
 *::before,
 *::after {
@@ -13,10 +14,15 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #f2f5f7;
+    color: #fff;
     letter-spacing: 1px;
     font-weight: 300;
 }
+:root {
+    --MainColor: #0050ff;
+}
+
+
 body{
     overflow-x: hidden;
 }
@@ -76,7 +82,7 @@ nav{
     text-transform: uppercase;
 } 
 .text h1:hover{
-    color: #ff0000;
+    color: var(--MainColor);
 }
 .text p {
     margin-top: 5px;
@@ -86,7 +92,7 @@ nav{
     transition: all 0.5s ease;
 }
 .text p:hover{
-    color: #ff0000;
+    color: var(--MainColor);
 }
 
 /* Container */
@@ -151,35 +157,39 @@ nav{
 }
 
 
-#body-work {
+.body-work {
     background: #eee;
     display: grid;
-    height: 50vh;
+    height: 55vh;
     place-items: center;
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
-  }
-  
-#works {
+}
+.body-work .project {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-transform: uppercase;
+} 
+.works {
     display: flex;
     flex-wrap: wrap;
     gap: clamp(10px, 0.8vw, 20px);
     justify-content: center;
-    margin-left: 80px;
-    width: clamp(600px, 80vw, 1400px);
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(600px, 80vw, 1700px);
 }
-
-#works > .work {
+.works > .work {
     aspect-ratio: 7 / 8;
     background-color: rgb(200, 200, 200);
     border-radius: 1vw;
     cursor: pointer;
     transition: background-color 250ms;
-    width: calc(25% - clamp(10px, 0.8vw, 20px));
+    width: 20%;
 }
 
-#works > .work:hover {
+.works > .work:hover {
     backdrop-filter: blur(1vw);
     background-color: rgba(55, 55, 55, 0.75);
 }
@@ -201,6 +211,9 @@ nav{
     height: 70%;
     position: relative;
 }
+.work > .work-content > .work-pic:hover {
+    border: clamp(3px, 0.4vw, 5px) solid var(--MainColor);
+}
 
 .work > .work-content > .work-pic > .work-pic-image {
     background-color: rgba(255, 255, 255, 0.06);
@@ -213,7 +226,7 @@ nav{
 
 .work > .work-content > .work-name {
     color: black;
-    font-family: 'Rubik', sans-serif;
+    font-family: sans-serif;
     font-size: clamp(1em, 2vw, 2em);
     margin: 20px;
     text-align: center;
@@ -255,7 +268,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -5px;
-	background-color: #ff0000;
+	background-color: var(--MainColor);
 	height: 2px;
 	box-sizing: border-box;
 	width: 75px;
@@ -274,7 +287,7 @@ ul{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ff0000;
+	color: var(--MainColor);
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -290,7 +303,7 @@ ul{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--MainColor);
     color: #000;    
 }
 
@@ -333,7 +346,7 @@ ul{
     display: block;
     height: 100%;
     width: 0%;
-    background-color: #ff0000;
+    background-color: var(--MainColor);
     opacity: 50%;
     position: absolute;
     transition: all ease-in-out 250ms;

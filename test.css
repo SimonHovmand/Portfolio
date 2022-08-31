@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232124;
+  color: #ffffff;
+  font: 400 16px/22px "Helvetica", "Arial", sans-serif;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-container {
+  left: 0;
+  margin: 0 auto;
+  max-width: 940px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 80%;
+  transform: translateY(-50%);
+}
+.contact-container h1 {
+  font: 400 48px/54px "Times New Roman", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-container .contact {
+  border: 5px solid #840000;
+  display: inline-block;
+  height: 125px;
+  margin-right: -5px;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: 33.3333%;
+}
+.contact-container .contact:hover p {
+  background-color: #840000;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.contact-container .contact:hover .btn {
+  opacity: 1;
+  visibility: visible;
+}
+.contact-container .contact h3 {
+  background-color: #232124;
+  display: inline-block;
+  left: 50%;
+  letter-spacing: 1px;
+  margin-top: -37px;
+  padding: 0 15px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.contact-container .contact h3:before {
+  background-color: #232124;
+  content: "";
+  display: block;
+}
+.contact-container .contact p {
+  background-color: transparent;
+  left: 0;
+  margin: 0 auto;
+  padding: 25px;
+  position: absolute;
+  right: 0;
+  width: 85%;
+  transition: all 0.2s ease-in-out;
+}
+.contact-container .contact .btn {
+  background-color: #232124;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  color: #69665c;
+  display: block;
+  margin: 15px auto 0;
+  max-width: 125px;
+  opacity: 0;
+  padding: 8px;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+@media all and (max-width: 1020px) {
+  .contact-container .contact {
+    display: block;
+    margin: 0 auto 55px;
+    width: 100%;
+  }
+}
