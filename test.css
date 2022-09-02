@@ -1,107 +1,172 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: #636983;
+}
+
+.wrapper {
+  background-color: #F6F8FF;
+  width: 100%;
+  min-height: 100vh auto;
+}
+.wrapper .line {
+  width: 50%;
+  margin: 50px auto 0 auto;
+  height: 1px;
+  background-color: #c3d2e3;
+}
+
+h2.tab-title {
+  font-weight: 300;
+}
+h2.tab-title.tab-primary {
+  color: #636983;
+}
+h2.tab-title.tab-success {
+  color: #51a14c;
+}
+h2.tab-title.tab-default {
+  color: #525252;
+}
+h2.tab-title.tab-warning {
+  color: #b12222;
+}
+
+.container3 {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.container3 .card {
+  max-width: 53%;
+  min-height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  margin: 0 auto;
+}
+
+.tabs {
+  text-align: center;
+  position: relative;
+}
+.tabs input {
+  position: absolute;
+  opacity: 0;
   margin: 0;
   padding: 0;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #232124;
-  color: #ffffff;
-  font: 400 16px/22px "Helvetica", "Arial", sans-serif;
-}
-
-h3 {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.contact-container {
-  left: 0;
-  margin: 0 auto;
-  max-width: 940px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 80%;
-  transform: translateY(-50%);
-}
-.contact-container h1 {
-  font: 400 48px/54px "Times New Roman", serif;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.contact-container .contact {
-  border: 5px solid #840000;
+.tabs input + label {
+  font-weight: 300;
+  color: #000;
+  margin: 15px 0;
+  width: 200px;
+  cursor: pointer;
   display: inline-block;
-  height: 125px;
-  margin-right: -5px;
-  padding: 25px;
-  position: relative;
+  transition: all 0.3s;
   text-align: center;
-  vertical-align: top;
-  width: 33.3333%;
+  font-size: 2rem;
+  border: none;
 }
-.contact-container .contact:hover p {
-  background-color: #840000;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+.tabs input + label:hover {
+  color: #777;
 }
-.contact-container .contact:hover .btn {
+.tabs .tabsShadow {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  position: absolute;
+  height: 35px;
+  z-index: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.content2 {
+  margin: 0px auto;
+  text-align: left;
+  color: #666;
+  font-size: 1rem;
+  line-height: 20px;
+  position: relative;
+  height: 220px;
+}
+.content2 .item {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  padding: 10px 20px;
+}
+.content2 p {
+  margin: 10px 0;
+  color: #000;
+}
+
+.glider {
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(90deg, #5b3cc4 0%, #3c6cc4 100%);
+  border-radius: 3px;
+  position: absolute;
+  box-shadow: 0px 0px 8px 0px rgba(91, 60, 196, 0.4);
+  transition: all 0.3s;
+}
+
+#tab-1:checked ~ .glider {
+  left: 239px;
+}
+
+#tab-2:checked + label {
+  color: #51a14c;
+}
+#tab-2:checked ~ .glider {
+  background: linear-gradient(90deg, #51a14c 0%, #10c33e 100%);
+  box-shadow: 0px 0px 8px 0px rgba(47, 187, 12, 0.62);
+}
+#tab-2:checked ~ .glider {
+  left: 444px;
+}
+
+#tab-3:checked + label {
+  color: #525252;
+}
+#tab-3:checked ~ .glider {
+  background: linear-gradient(90deg, #4a4a4a 0%, #9b9b9b 100%);
+}
+#tab-3:checked ~ .glider {
+  left: 649px;
+}
+
+#tab-1:checked ~ section #content-1,
+#tab-2:checked ~ section #content-2,
+#tab-3:checked ~ section #content-3 {
   opacity: 1;
   visibility: visible;
 }
-.contact-container .contact h3 {
-  background-color: #232124;
-  display: inline-block;
-  left: 50%;
-  letter-spacing: 1px;
-  margin-top: -37px;
-  padding: 0 15px;
-  position: absolute;
-  transform: translateX(-50%);
-}
-.contact-container .contact h3:before {
-  background-color: #232124;
-  content: "";
-  display: block;
-}
-.contact-container .contact p {
-  background-color: transparent;
-  left: 0;
-  margin: 0 auto;
-  padding: 25px;
-  position: absolute;
-  right: 0;
-  width: 85%;
-  transition: all 0.2s ease-in-out;
-}
-.contact-container .contact .btn {
-  background-color: #232124;
-  border-radius: 50px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-  color: #69665c;
-  display: block;
-  margin: 15px auto 0;
-  max-width: 125px;
-  opacity: 0;
-  padding: 8px;
-  visibility: hidden;
-  transition: 0.2s ease-in-out;
-}
 
-@media all and (max-width: 1020px) {
-  .contact-container .contact {
-    display: block;
-    margin: 0 auto 55px;
-    width: 100%;
+@media (max-width: 775px) {
+
+  #tab-1:checked ~ .glider {
+    left: 0px;
+  }
+
+  #tab-2:checked ~ .glider {
+    left: 73px;
+  }
+
+  #tab-3:checked ~ .glider {
+    left: 146px;
   }
 }
