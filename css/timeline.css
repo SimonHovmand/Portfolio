@@ -23,9 +23,6 @@
   text-decoration-color: var(--MainColor);
 }
 
-/*s
-* timeline
-*/
 #timeline {
   list-style: none;
   margin: 15px 0 30px 120px;
