@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <title>Personal Website</title>
     <link rel="icon" type="image/png" href="images/Logo.png">
 
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" >
     <link rel="stylesheet" href="css/MainStyles.css">
-    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="test1.css">
 
-</html>
+</head>
 <body>
     <!---------
         Nav
@@ -30,7 +27,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#om-mig">Om mig</a></li>
-                <li><a href="#erfaring">Erfaring</a></li>
+                <li><a href="#Projects">Projekter</a></li>
                 <li><a href="#footer_kontakt">Kontakt</a></li>
             </ul>
         </nav>
@@ -42,25 +39,24 @@
     ---------->
     <div class="top"></div>
 
-    <!--------------
+    <!-------------
         Welcome
-    --------------->
+    -------------->
     <div class="body1">
         <div class="text">
             <h1>simon / hovmand</h1>
             <p>Studerende programmør</p>
         </div>
     </div>
-
-    <!--------------
+    <!-------------
         Devider
-    --------------->
+    -------------->
+    <a id="om-mig"></a>
     <div class="devider"></div>
 
-    <!------------------
-        Information
-    ------------------->
-    <a id="om-mig"></a>
+    <!----------
+        Info
+    ----------->
     <div class="body2">
         <div class="cards">
             <article class="information [ card ]">
@@ -82,9 +78,18 @@
                 Derudover er jeg ikke bange for at påtage mig opgaver og få dem løst på den bedst mulige måde. <br>
                 Jeg er god til at arbejde sammen med andre mennesker men kan også godt arbejde selvstændigt. </p>
             </article>
+            <article class="information [ card ]">
+                <h2 class="title">JEG VIL GERNE</h2>
+                <p class="info">
+                    Mit mål er at arbejde med udvikling af software og programmering <br>
+                    Jeg vil gerne lære nyt og ønsker mig derfor en læreplads, <br>
+                    hvor jeg får mulighed for at afprøve flere forskellige typer af programmeringsopgaver.  <br>
+                    Jeg har ikke fastlagt mig på et særligt sprog eller et særligt område. <br>
+                    Jeg tillader mig at lade mig inspirere af de mennesker og opgaver jeg møder på min vej, <br>
+                    for på den måde at finde frem til det jeg er, og bliver bedst til.</p>
+                </article>
             <article class="skills [ card ]">
-            <div class="inner">
-                <h2 class="title">Kompetencer</h2>
+                <h2 class="title">KOMPETENCER</h2>
                 <ul class="features">
                     <li>
                         <span class="icon">
@@ -133,59 +138,113 @@
                             <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
                         </svg>
                         </span>
-                        <span><strong>Krativ</strong></span>
+                        <span><strong>Kreativ</strong></span>
                     </li>
                     <p class="elaborate">Jeg er kreativ og god til at tænke ud af boksen.</p>
                 </ul>
-            </div>
             </article>
         </div>
     </div>
 
 
-    <!---------------
-        Erfaring
-    ---------------->
-    <a id="erfaring"></a>
-    <div class="blog-card">
+    <!----------------
+        Experience
+    ----------------->
+    <div class="body3">
+
+    </div>
+
+    <!-------------
+        Skills
+    -------------->
+    <div class="body4">
+        <h1>My Skills</h1>
+        <div class="main">
+            <div class="container">
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                            <span class="tooltip">60%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">PYTON</span>
+                    <div class="skill-bar">
+                        <span class="skill-per python">
+                            <span class="tooltip">30%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">C#</span>
+                    <div class="skill-bar">
+                        <span class="skill-per c-sharp">
+                            <span class="tooltip">20%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">LUA</span>
+                    <div class="skill-bar">
+                        <span class="skill-per lua">
+                            <span class="tooltip">10%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------
+        Projects
+    --------------->
+    <a id="Projects"></a>
+    <div class="Project-card">
         <div class="meta">
             <div class="photo" style="background-image: url(images/developer-1.jpg)"></div>
             <ul class="details">
         </ul>
         </div>
         <div class="description">
-            <h1>Python</h1>
-            <h2>Python calculator</h2>
-            <p> </p>
-            <p class="read-more">
-                <a href="#">See the code</a>
+            <h1>Css calculator</h1>
+            <h2>By Simon Hovmand</h2>
+            <p> Just a fun project of mine <br>
+                Its a working calculator, made in HTML and CSS</p>
+            <p class="See-more">
+                <a href="calculator.html">Try the calculator</a>
             </p>
         </div>
       </div>
-      <div class="blog-card alt">
+      <div class="Project-card alt">
         <div class="meta">
             <div class="photo" style="background-image: url(images/developer-2.jpg)"></div>
             <ul class="details">
             </ul>
         </div>
         <div class="description">
-            <h1>Mastering the Language</h1>
-            <h2>Java is not the same as JavaScript</h2>
+            <h1>Python calculator</h1>
+            <h2>By Simon Hovmand</h2>
             <p> </p>
-            <p class="read-more">
+            <p class="See-more">
                 <a href="#">See the code</a>
             </p>
         </div>
       </div>
     </div>
 
-    <!----------------
-        Projecter
-    ----------------->
-
-    <!-------------
+    <!------------
         Footer
-    -------------->
+    ------------->
     <a id="footer_kontakt"></a>
     <footer class="footer">
         <div class="container2">
@@ -197,6 +256,14 @@
                 <a href="https://github.com/SimonHovmand"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/simon-hovmand-003108221/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+            </div>
+            <div class="footer-col">
+                <h4>CV og ansøgning</h4>
+                <ul>
+                <li><a href="https://drive.google.com/file/d/12EfjJWSXSXaKloszJ9rqg9z36azN8ptu/view?usp=sharing">Mit CV</a></li>
+                <li><a href="https://drive.google.com/file/d/1pcWj72gi935eDQbW-79pphp5eKeXeDvI/view?usp=sharing">Min Ansøgning</a></li>
+                <li><a href="https://drive.google.com/file/d/1KVyrFxYPIH_G8Sr9nI5c3yUXD2HJoDYD/view?usp=sharing">Mit CV og Ansøgning</a></li>
+                </ul>
             </div>
             <div class="footer-col">
                 <h4>Navigation</h4>
@@ -219,3 +286,4 @@
         </div>
     </footer>
 </body>
+</html>
