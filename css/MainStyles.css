@@ -254,7 +254,6 @@ h1{
     justify-content: center;
     gap: 2.5rem;
     width: 100%;
-    max-width: 100%;
     margin: 0vh auto;
     padding: 50px
 }
@@ -262,7 +261,7 @@ h1{
 .card {
     border-radius: 16px;
     box-shadow: 0 30px 30px -25px rgba(65, 51, 183, 0.25);
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .information {
@@ -271,15 +270,12 @@ h1{
 }
 .information:hover{
     background-color: var(--MainColor);
-    transition: 1s;
 }
 .information:hover > .info{
     color:  var(--white);
-    transition: 1s;
 }
 .information:hover > .title{
     color:  var(--white);
-    transition: 1s;
 }
 
 .information .title {
@@ -306,19 +302,15 @@ h1{
 }
 .skills:hover{
     background-color: var(--MainColor);
-    transition: 1s;
 }
 .skills:hover > .title{
     color:  var(--white);
-    transition: 1s;
 }
 .skills:hover > .features >.elaborate{
     color:  var(--white);
-    transition: 1s;
 }
 .skills:hover > .features strong{
     color:  var(--white);
-    transition: 1s;
 }
 
 .skills strong {
@@ -625,7 +617,7 @@ border-radius: 3px;
 
 /* Footer */
 .container2{
-	max-width: 80%;
+	max-width: 90%;
 	margin: auto;
 }
 .row{
@@ -695,6 +687,7 @@ ul{
     vertical-align: middle;
     transition: margin 0.3s, opacity 0.3s;
 }
+
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -714,4 +707,10 @@ ul{
     width: 100%;
     margin-bottom: 30px;
 }
+}
+@media(max-width: 1200px){
+    .footer-col ul li a::before{
+        content: " ";
+        vertical-align: middle;
+    }
 }
