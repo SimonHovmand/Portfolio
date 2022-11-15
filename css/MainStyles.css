@@ -65,14 +65,7 @@ a.anchor {
 }
 }
 .body2 {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3cpath d='M -930.9749169849531%2c99 C -834.97%2c188 -642.97%2c522 -450.9749169849531%2c544 C -258.97%2c566 -162.97%2c236.8 29.025083015046903%2c209 C 221.03%2c181.2 317.03%2c438.4 509.0250830150469%2c405 C 701.03%2c371.6 802.83%2c46.4 989.0250830150469%2c42 C 1175.22%2c37.6 1349.81%2c314.8 1440%2c383' stroke='rgba(51%2c 121%2c 194%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -802.6972741590587%2c507 C -706.7%2c408.6 -514.7%2c39 -322.6972741590587%2c15 C -130.7%2c-9 -34.7%2c337.6 157.30272584094132%2c387 C 349.3%2c436.4 445.3%2c239 637.3027258409413%2c262 C 829.3%2c285 956.76%2c540.2 1117.3027258409413%2c502 C 1277.84%2c463.8 1375.46%2c157.2 1440%2c71' stroke='rgba(51%2c 121%2c 194%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -50.49173951598084%2c63 C 45.51%2c141.8 237.51%2c416.8 429.50826048401916%2c457 C 621.51%2c497.2 717.51%2c247.4 909.5082604840192%2c264 C 1101.51%2c280.6 1197.51%2c561.2 1389.508260484019%2c540 C 1581.51%2c518.8 1859.41%2c209.6 1869.508260484019%2c158 C 1879.61%2c106.4 1525.9%2c257.2 1440%2c282' stroke='rgba(51%2c 121%2c 194%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -703.1336652093087%2c431 C -607.13%2c359.6 -415.13%2c87 -223.1336652093087%2c74 C -31.13%2c61 64.87%2c353.8 256.8663347906913%2c366 C 448.87%2c378.2 544.87%2c127.8 736.8663347906913%2c135 C 928.87%2c142.2 1076.24%2c407.8 1216.8663347906913%2c402 C 1357.49%2c396.2 1395.37%2c165.2 1440%2c106' stroke='rgba(51%2c 121%2c 194%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -778.8568724738545%2c109 C -682.86%2c196.8 -490.86%2c518 -298.85687247385454%2c548 C -106.86%2c578 -10.86%2c272.8 181.14312752614546%2c259 C 373.14%2c245.2 469.14%2c514 661.1431275261455%2c479 C 853.14%2c444 985.37%2c98 1141.1431275261455%2c84 C 1296.91%2c70 1380.23%2c344 1440%2c409' stroke='rgba(51%2c 121%2c 194%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #B9D6FF;
-    height: 50vh auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(50deg, #383745 50%, #16161b 50%);
 }
 .body3{
     background: linear-gradient(#ffffff 5%, #0050ff);
@@ -135,117 +128,91 @@ h1{
 
 
 /*cards*/
-
-.cards {
+.container-flex {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 50px;
     gap: 2.5rem;
-    width: 100%;
-    margin: 0vh auto;
-    padding: 50px
+    height: auto;
+}
+
+@media (max-width: 1000px){
+    .container-flex{
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .card {
-    border-radius: 16px;
-    box-shadow: 0 30px 30px -25px rgba(65, 51, 183, 0.25);
-    max-width: 650px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background: #181820;
+    max-width: 600px;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 1);
+    border: solid 2px #0050ff;
+    border-radius: 26px;
+    overflow: hidden;
 }
 
 .information {
-    background-color: rgba(255, 255, 255, 0.25);
-    padding: 1.5rem;
-    border: 3px solid rgb(255, 255, 255);
-}
-.information:hover{
-    background-color: var(--MainColor);
-}
-.information:hover > .info{
-    color:  var(--white);
-}
-.information:hover > .title{
-    color:  var(--white);
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 1);
+    border-radius: 26px;
+    padding: 40px;
+    z-index: 2;
 }
 
-.information .title {
-    color: var(--MainColor);
+.card h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 50px;
+    margin-bottom: 5px;
     text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.information .title + * {
-    margin-top: 1rem;
-}
-.information .info {
-    color: var(--charcoal);
-}
-.information .info + * {
-    margin-top: 1.25rem;
-}
-
-.skills {
-    background-color: rgba(255, 255, 255, 0.25);
-    padding: 1.5rem;
-    border: 3px solid rgb(255, 255, 255);
-
-}
-.skills:hover{
-    background-color: var(--MainColor);
-}
-.skills:hover > .title{
-    color:  var(--white);
-}
-.skills:hover > .features >.elaborate{
-    color:  var(--white);
-}
-.skills:hover > .features strong{
-    color:  var(--white);
-}
-
-.skills strong {
-    font-weight: 600;
-    color: var(--black);
-}
-.skills .title {
+    text-decoration: underline #0050ff;
     color: var(--MainColor);
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
-.skills .features {
-    display: flex;
-    flex-direction: column;
-}
-.skills .features li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-.skills .features .icon {
-    background-color: var(--check);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 30px;
     color: var(--white);
+}
+
+.card p::before{
+    content: "● ";
+}
+
+.circle-top, .circle-bottom {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #000088 0%, #0050ff 100%);
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    transition: all 0.5s ease-in-out;
 }
-.skills .features .icon svg {
-    width: 14px;
-    height: 14px;
+
+.circle-top {
+    top: -20px;
+    left: -20px;
 }
-.skills .features + * {
-    margin-top: 1.25rem;
+
+.circle-bottom {
+    bottom: -20px;
+    right: -20px;
 }
-.skills .elaborate {
-    color: var(--black);
-    padding-left: 25px;
-    padding-bottom: 20px;
+
+.card:hover .circle-top, .card:hover .circle-bottom {
+    transform: scale(10);
+}
+
+.card:hover{
+    box-shadow: 0px 2px 21px rgba(0, 81, 255, 1);
 }
 
 
