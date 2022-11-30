@@ -41,28 +41,14 @@ a.anchor {
     background-color: var(--charcoal);
 }
 .body1 {
-    justify-content: center;
     display: flex;
-    height: 95vh;
-    background-image: url(../images/background1.png), url(../images/background2.png), linear-gradient(150deg, #0050ff 25%, #ffffff 50%);
-    background-size: 0%, 0%, auto;
-    background-position: left, right, center;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url(../images/Baggrund.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    animation: progress1 2s ease-in-out forwards;
-}
-@keyframes progress1 {
-    0%{
-        background-size: 0%, 0%, auto;
-    }
-    25%{
-        background-size: 0%, 0%, auto;
-}
-    75%{
-        background-size: 65%, 65%, auto;    
-}
-    100%{
-        background-size: 50%, 50%, auto;
-}
 }
 .body2 {
     background: linear-gradient(50deg, #383745 50%, #16161b 50%);
@@ -94,38 +80,47 @@ h1{
     text-transform: uppercase;
 }
 
-/* Text */
-.text{
+/* welcome */
+.welcome{
     position: absolute;
     text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: auto;
+    width: 75%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 1);
+    border-radius: 26px;
+    border: solid 2px #00ffff;
     transition: all 0.5s ease;
-}
-.text:hover{
-    padding-top: 15px;
-}
-.text h1 {
-    color: var(--black);
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-} 
-.text h1:hover{
-    color: var(--MainColor);
-}
-.text p {
-    margin-top: 5px;
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
-    transition: all 0.5s ease;
-}
-.text p:hover{
-    color: var(--MainColor);
 }
 
+@media (max-width: 650px){
+    .welcome{
+        width: 90%;
+    }
+}
+.welcome h1 {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+} 
+.welcome p {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 2em;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.welcome:hover{
+    background: rgba(0, 81, 255, 0.25);
+    box-shadow: 0px 2px 21px rgba(0, 81, 255, 1);
+}
+.welcome:hover > h1, .welcome:hover p{
+    color: #fff;
+}
 
 /*cards*/
 .container-flex {
@@ -597,7 +592,7 @@ h1{
     }
 }
  
-.halfcirkel1 {
+.halfcircle1 {
     position: absolute;
     text-align: center;
     width: 40%;
