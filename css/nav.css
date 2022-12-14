@@ -16,6 +16,7 @@ nav{
     background-color: #131418;
     display: flex;
     position: fixed;
+    top: 8px;
     z-index: 10;
 }
 

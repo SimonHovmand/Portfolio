@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Personal Website</title>
-    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="icon" type="image/png" href="images/developer-1.PNG">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,27 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" >
     <link rel="stylesheet" href="css/MainStyles.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/timeline.css">
 
 </head>
 <body>
+    <!-----------------
+        Progress bar
+    ------------------>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> 
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
     <!---------
         Nav
     ---------->
@@ -49,6 +65,7 @@
         <div class="welcome">
             <h1>simon hovmand</h1>
             <p>Studerende programmør</p>
+            <h3>test</h3>
         </div>
     </div>
     <!-------------

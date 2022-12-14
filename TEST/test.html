@@ -7,28 +7,35 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <div class="container-flex">
-        <div class="card">
-            <div class="description">
-                <div class="avatar"></div>
-                <h3>Simon Hovmand</h3>
-                <hr class="solid">
-                <h4>Programmør Studerende</h4>
-                <h4>12/09/2004</h4>
-                <hr class="solid">
-                <h4>Jeg er meget lærevillig, lærenem, mødestabil og imødekommende. </h4>
-            </div>
-            <div class="socials">
-                <a href="https://www.facebook.com/simon.hovmand"><iconify-icon icon="ant-design:facebook-filled" style="color: white;" width="40" height="40"></iconify-icon></a>
-                <a href="https://www.linkedin.com/in/simon-hovmand-003108221/"><iconify-icon icon="akar-icons:linkedin-box-fill" style="color: white;" width="40" height="40"></iconify-icon></a>
-                <a href="https://github.com/SimonHovmand"><iconify-icon icon="ant-design:twitter-circle-filled" style="color: white;" width="40" height="40"></iconify-icon></a>
-                <a href="mailto:Simonhovmand@gmail.com"><iconify-icon icon="ant-design:mail-filled" style="color: white;" width="40" height="40"></iconify-icon></a>
-                <a href="tel:+4521392439"><iconify-icon icon="dashicons:phone" style="color: white;" width="40" height="40"></iconify-icon></a>
-                <a href="https://www.google.com/maps/@55.26344518330568, 11.526206307934064"><iconify-icon icon="ci:location" style="color: white;" width="40" height="40"></iconify-icon></a>
-            </div>
-        </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> 
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
     </div>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-      
+
+    <img src="../images/developer-1.PNG" style="width:auto ">
 </body>
 </html>

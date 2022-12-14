@@ -1,102 +1,32 @@
-:root {
-  --background: #cecece;
-  --scale: 1;
-  --icon-size: 24px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+	
 body {
-  width: 100%;
-  height: 200vh;
-  display: flex;
-  background: var(--background);
+	height: 300vh;
 }
 
-nav {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  height: 80px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  border-radius: 0 0 25px 25px;
-  padding: 0 15px;
-  background: #131313;
-  overflow: hidden;
-}
-nav ul {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav ul li {
-  list-style: none;
-  width: var(--icon-size);
-  height: var(--icon-size);
-}
-nav ul li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-nav ul li a svg {
-  fill: #fff;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  transition: opacity 100ms ease;
-  pointer-events: none;
-}
-nav ul li a.active svg {
-  opacity: 1;
-}
-nav ul li a:hover svg {
-  opacity: 1;
-}
-nav .tubelight {
-  position: absolute;
-  left: 0px;
-  top: 5px;
-  transform: translateX(-60%);
-  width: 5%;
-  height: 5px;
-  border-radius: 5px;
-  background: #ffffff;
-  transition: left 400ms ease;
-  z-index: 10;
-}
-nav .tubelight .light-ray {
-  position: absolute;
-  left: -30%;
-  top: 5px;
-  width: 160%;
-  height: 80px;
-  clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) -50%, rgba(0, 0, 0, 0) 75%);
-  pointer-events: none;
+
+.top {
+	background-image: url(../images/Baggrund.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.support {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  padding: 10px;
-  display: flex;
-}
-.support a {
-  margin: 0 10px;
-  color: #222;
-  font-size: 1.8rem;
-  backface-visibility: hidden;
-  transition: all 150ms ease;
-}
-.support a:hover {
-  transform: scale(1.1);
+.box {
+	transform: translateY(25vh);
+	height: 30vh;
+	width: 60%;
+	backdrop-filter: blur(8px);
+	background: linear-gradient(rgba(200, 200, 200, 0.95), rgba(240, 240, 240, 0.95));
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, .25), 0 3px 20px 8px rgba(0, 0, 255, 0.5) !important;
+	border-radius: 15px;
+	border: solid 2px #0050ff;
 }

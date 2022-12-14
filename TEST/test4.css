@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+    height: 100vh;
+    overflow-wrap: break-word;
+
+}
+
+.package-body{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway",sans-serif;
+    background: #222;
+    height: auto;
+    padding: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .package-body {
+        display: grid;
+    }
+}
+
+.package {
+    position: relative;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-in-out 0.25s;
+}
+
+.best {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: goldenrod;
+    width: 175px;
+    height: 30px;
+    top: -28px;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid 2px gold;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.package-box{
+    position: relative;
+    height: 550px;
+    width: 300px;
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(gold, goldenrod) border-box;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    box-shadow: 0 0 7px rgba(218, 165, 32);
+    overflow: hidden;
+}
+
+.package:hover{
+    transform: scale(1.05);
+}
+
+.package-box:hover .package-name{
+    transition: ease-in-out 0.25s;
+    background: goldenrod;
+}
+
+.package-name {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    top: -15px;
+    left: -15px;
+    width: 110%;
+    height: 110px;
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+
+.package-name h1 {
+    transform: rotate(3deg);
+    padding-top: 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.package-price {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: #444;
+    color: #fff;
+    top: 85px;
+    width: 100%;
+    height: 100px;
+    border-bottom: solid 2px gold;
+    z-index: 1;
+}
+
+.package-price span {
+    padding-top: 30px;
+    font-size: 2.25em;
+    font-weight: 500;
+}
+
+.package-price p {
+    padding-top: 45px;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.package-price span::before {
+    content: "$ ";
+}
+
+.package-price p::after {
+    content: " / MON";
+}
+
+.package-contents {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 190px;
+    background: #fff;
+    z-index: 0;
+}
+
+.package-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 47px;
+    background: #fff;
+    transition: ease-in-out 0.25s;
+    border-bottom: solid 1px #ddd;
+}
+
+.package-content:hover {
+    background: #eee;
+}
+
+.package-content span::before {
+    content: "✔️";
+    margin-right: 5px;
+}
+
+.package-content span {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.package-content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #333;
+}
+
+.button {
+    position: absolute;
+    background-color:#44c767;
+	color: #ffffff;
+	box-shadow: 0px 0px 10px 0px #3dc21b;
+    border: 1px solid #18ab29;
+	border-radius: 28px;
+	cursor: pointer;
+    text-decoration: none;
+	font-size: 1.1em;
+	padding: 10px 30px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+    transition: ease-in-out 0.25s;
+    z-index: 3;
+}
+
+.button:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0px 0px 15px 0px gold;
+    border: 2px solid goldenrod;
+}
