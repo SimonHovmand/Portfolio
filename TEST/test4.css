@@ -74,7 +74,6 @@ body{
 }
 
 .package-box:hover .package-name{
-    transition: ease-in-out 0.25s;
     background: goldenrod;
 }
 
@@ -90,12 +89,13 @@ body{
     width: 110%;
     height: 110px;
     transform: rotate(-3deg);
+    transition: ease-in-out 0.25s;
     z-index: 2;
 }
 
 .package-name h1 {
     transform: rotate(3deg);
-    padding-top: 15px;
+        padding-top: 15px;
     font-size: 2.5em;
     font-weight: 500;
     text-transform: uppercase;
@@ -139,7 +139,6 @@ body{
     width: 100%;
     height: auto;
     top: 190px;
-    background: #fff;
     z-index: 0;
 }
 
@@ -149,13 +148,12 @@ body{
     align-items: center;
     width: 100%;
     height: 47px;
-    background: #fff;
     transition: ease-in-out 0.25s;
     border-bottom: solid 1px #ddd;
 }
 
 .package-content:hover {
-    background: #eee;
+    background: #ddd;
 }
 
 .package-content span::before {
