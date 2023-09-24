@@ -1,364 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Personal Website</title>
-    <link rel="icon" type="image/png" href="images/developer-1.PNG">
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" >
-    <link rel="stylesheet" href="css/MainStyles.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/timeline.css">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
-    <!-----------------
-        Progress bar
-    ------------------>
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div> 
 
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
-    <!---------
-        Nav
-    ---------->
-    <a id="home"></a>
-    <div class="top">
-        <nav>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="name">
+                <a href="#"><img id="navbar-img" src="website-development.webp"></a>
+                <li><a href="#">GreenState.Tech</a></li>
+            </div>
             <div class="hamburger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#om-mig">Om mig</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projekter</a></li>
-                <li><a href="#footer_kontakt">Kontakt</a></li>
+            <ul class="navbar-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Hjem</a></li>
+                <li><a href="info.html"><i class="fa-solid fa-list"></i> Info</a></li>
+                <li><a href="regler.html"><i class="fa-solid fa-clipboard"></i> Om os</a></li>
             </ul>
-        </nav>
-        <script src="nav.js"></script>
-    </div>
-
-    <!---------
-        Top
-    ---------->
-    <div class="top"></div>
-
-    <!-------------
-        Welcome
-    -------------->
-    <div class="body1">
-        <div class="welcome">
-            <h1>simon hovmand</h1>
-            <p>Studerende programmør</p>
-            <h3>test</h3>
         </div>
-    </div>
-    <!-------------
-        Devider
-    -------------->
-    <div class="devider"></div>
-    <!----------
-        Info
-    ----------->
-    <a class="anchor" id="om-mig"></a>
-    <div class="body2">
-        <div class="container-flex">
-            <div class="card">
-                <div class="circle-top"></div>
-                <div class="circle-bottom"></div>
-                <div class="information">
-                    <h1>PROFIL</h1>
-                    <p>Jeg er 18 år gammel, og har fødselsdag d. 12/09/2004 </p>
-                    <p>Jeg er meget lærevillig og lærenem, mødestabil og imødekommende. </p>
-                    <p>Jeg gør altid mit bedste og tænker kreativt til hvordan man kan løse evt. udfordringer. </p>
-                    <p>Derudover er jeg ikke bange for at påtage mig opgaver og få dem løst på den bedst mulige måde. </p>
-                    <p>Jeg er god til at arbejde sammen med andre mennesker men kan også godt arbejde selvstændigt. </p>
-              </div>
-            </div>
-            <div class="card">
-                <div class="circle-top"></div>
-                <div class="circle-bottom"></div>
-                <div class="information">
-                    <h1>FRITID</h1>
-                    <p>I min fritid er jeg gymnastik træner i min lokale idrætsforening. </p>
-                    <p>Jeg har selv gået til gymnastik i omkring 13 år. </p>
-                    <p>Jeg elsker at hjælpe folk og lærer fra mig. </p>
-                    <p>Jeg hjælper gerneralt til i næsten alle afdelinger af foreningen. </p>
-                    <p>Der udover har jeg blandt andet stået for opbygningen af foreningens nye hjemmeside. </p>
-                    <p>Jeg hjælper også til med mange af de arrangementer som der afholdes. </p>
-              </div>
-            </div>
-            <div class="card">
-                <div class="circle-top"></div>
-                <div class="circle-bottom"></div>
-                <div class="information">
-                    <h1>KOMPETENCER</h1>
-                    <p>Jeg er 18 år gammel, og har fødselsdag d. 12/09/2004 </p>
-                    <p>Jeg er meget lærevillig og lærenem, mødestabil og imødekommende. </p>
-                    <p>Jeg gør altid mit bedste og tænker kreativt til hvordan man kan løse evt. udfordringer. </p>
-                    <p>Derudover er jeg ikke bange for at påtage mig opgaver og få dem løst på den bedst mulige måde. </p>
-                    <p>Jeg er god til at arbejde sammen med andre mennesker men kan også godt arbejde selvstændigt. </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </header>
+    <script src="script.js"></script>
 
-    <!----------------
-        Experience
-    ----------------->
-    <div class="body3">
-        <div class="row">
-            <div class="column">
-                <h1>Udannelse</h1>
-                <section id="cd-timeline" class="cd-container">
-                    <div class="cd-timeline-content">
-                        <h2>SOP (Skole oplærings plads)</h2>
-                        <div class="timeline-content-info">
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            August 2022 - Nuværende
-                        </span>
-                        </div>
-                        <p>Jeg går på nuværende tidspunkt på SOP i Ringsted, da jeg ikke har kunnet finde en lærerplads i et firma</p>
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h2>Grundforløb 2, ZBC Slagelse</h2>
-                        <div class="timeline-content-info">
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            Februar 2022 - Juni 2022
-                        </span>
-                        </div>
-                        <p>Jeg gik i 2022 på grundforløb 2 i Slagelse, hvor jeg tog Data- og kommunikationsuddannelsen med EUX.</p>
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h2>Grundforløb 1, ZBC Slagelse</h2>
-                        <div class="timeline-content-info">
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            August 2021 - Februar 2022
-                        </span>
-                        </div>
-                        <p>Jeg tog GF 1 på ZBC i Slagelse med en EUX</p>
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h2>10. Klasse, ZBC Næstved</h2>
-                        <div class="timeline-content-info">
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            August 2020 - Juni 2021
-                        </span>
-                        </div>
-                        <p>Jeg tog en 10. klasse på ZBC i Næstved, da jeg på det tidspunkt ikke vidste hvilken uddannelses retning jeg ville gå.</p>
-                    </div>
-                </section>
-            </div>
-            <div class="column">
-                <h1>Erhvervserfaring</h1>
-                <section id="cd-timeline" class="cd-container">
-                    <div class="cd-timeline-content">
-                        <h2>SuperBrugsen COOP</h2>
-                        <div class="timeline-content-info">
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            Januar 2021 - August 2022
-                        </span>
-                        </div>
-                        <p>Jeg har arbejdet som servicemedarbejder i SuperBrugsen</p>
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h2>Avisbud, FK Distribution</h2>
-                        <div class="timeline-content-info">
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            September 2019 - Juni 2020
-                        </span>
-                        </div>
-                        <p>Jeg arbejdede som avisbud for FK Distribution i perioden september 2019 til juni 2020</p>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
 
-    <!-------------
-        Skills
-    -------------->
-    <a class="anchor" id="skills"></a>
-    <div class="body4">
-        <h1>Mine Færdigheder</h1>
-        <div class="main">
-            <div class="container">
-                <div class="skill-box">
-                    <span class="title">HTML</span>
-                    <div class="skill-bar">
-                        <span class="skill-per html">
-                            <span class="tooltip">70%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <span class="title">CSS</span>
-                    <div class="skill-bar">
-                        <span class="skill-per css">
-                            <span class="tooltip">60%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <span class="title">PYTON</span>
-                    <div class="skill-bar">
-                        <span class="skill-per python">
-                            <span class="tooltip">30%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <span class="title">C#</span>
-                    <div class="skill-bar">
-                        <span class="skill-per c-sharp">
-                            <span class="tooltip">20%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <span class="title">LUA</span>
-                    <div class="skill-bar">
-                        <span class="skill-per lua">
-                            <span class="tooltip">10%</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section class="intro">
 
-    <!--------------
-        Projects
-    --------------->
-    <a class="anchor" id="projects"></a>
-    <div class="projects">
-        <h1>Mine projekter</h1>
-        <div class="Project-card">
-            <div class="meta">
-                <div class="photo" style="background-image: url(images/developer-1.PNG)"></div>
-                <ul class="details">
-            </ul>
-            </div>
-            <div class="description">
-                <h1>Min portfolio hjemmeside</h1>
-                <h2>Af Simon Hovmand</h2>
-                <p> Min portfolio hjemmeside <br>
-                    Koden til denne portfolio hjemmeside</p>
-                <p class="See-more">
-                    <a href="calculator.html">See the code</a>
+            <div class="intro-content">
+                <h1>GreenState Tech</h1>
+
+                <h3>We shape the future</h3>
+
+
                 </p>
+                <p class="lg-p"> <a class="content-link" href="#">Se hvad vi tilbyder <i
+                            class="fas fa-arrow-alt-circle-right"></i></a> </p>
             </div>
-        </div>
-        <div class="Project-card alt">
-            <div class="meta">
-                <div class="photo" style="background-image: url(images/developer-2.jpg)"></div>
-                <ul class="details">
-                </ul>
-            </div>
-            <div class="description">
-                <h1>Css lommeregner</h1>
-                <h2>Af Simon Hovmand</h2>
-                <p> Bare en lille og simpel lommeregner, <br>
-                    lavet med forms og buttons, i HTML og CSS.</p>
-                <p class="See-more">
-                    <a href="calculator.html">See the code</a>
-                </p>
-            </div>
-        </div>
-    </div>
+            <div class="intro-img"> <img src="website-development.webp" alt=""> </div>
 
-    <!--------------
-        Kontakt
-    --------------->
-    <div class="business-card-flex">
-        <div class="business-card">
-            <div class="business-card-top">
-                <h1>Simon Hovmand</h1>
-                <h2>Programmør Studerende</h2>
-            </div>
-            <div class="halfcircle1">
-                <h3>LINKS</h3>
-            </div>
-            <div class="contact">
-                <a href="https://www.facebook.com/simon.hovmand"><iconify-icon icon="akar-icons:facebook-fill" width="30" height="30"></iconify-icon></a>
-                <a href="https://www.linkedin.com/in/simon-hovmand-003108221/"><iconify-icon icon="bi:linkedin" width="30" height="30"></iconify-icon></a>
-                <a href="https://github.com/SimonHovmand"><iconify-icon icon="ant-design:github-filled" width="32" height="32"></iconify-icon></a>
-                <a href="mailto:Simonhovmand@gmail.com"><iconify-icon icon="ant-design:mail-filled" width="30" height="30"></iconify-icon></a>
-                <a href="tel:+4521392439"><iconify-icon icon="dashicons:phone" width="30" height="30"></iconify-icon></a>
-                <a href="https://www.google.com/maps/@55.26344518330568, 11.526206307934064"><iconify-icon icon="ci:location" width="30" height="30"></iconify-icon></a>
-            </div>
-            <div class="filler"></div>
-            <div class="info">
-                <p></p>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+        </section>
 
-    <!------------
-        Footer
-    ------------->
-    <a class="anchor" id="footer_kontakt"></a>
-    <footer class="footer">
-        <div class="container2">
-            <div class="row">
-            <div class="footer-col">
-                <h4>Sociale links</h4>
-                <div class="social-links">
-                <a href="https://www.facebook.com/simon.hovmand"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://github.com/SimonHovmand"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/simon-hovmand-003108221/"><i class="fab fa-linkedin-in"></i></a>
+
+        <section class="features">
+
+            <div class="features-item">
+                <div class="features-item-head"> <img
+                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-access-anywhere.svg"
+                        alt=""> </div>
+                <div class="features-item-body  mt-2">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos officia itaque sunt quisquam, enim sed temporibus excepturi similique ipsa veritatis ullam iusto! Nihil id harum voluptates minima porro cumque?</p>
                 </div>
             </div>
-            <div class="footer-col">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#om-mig">Om mig</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projekter</a></li>
-                    <li><a href="#footer_kontakt">Kontakt</a></li>
+
+            <div class="features-item">
+                <div class="features-item-head"> <img
+                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-security.svg"
+                        alt=""> </div>
+                <div class="features-item-body mt-2">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quos quisquam magni, necessitatibus alias vero ullam? Facilis sapiente, temporibus facere aliquid unde quos nisi est assumenda asperiores nulla at dicta.</p>
+                </div>
+
+            </div>
+            <div class="features-item">
+                <div class="features-item-head"> <img
+                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-collaboration.svg"
+                        alt=""> </div>
+                <div class="features-item-body  mt-2">
+                    <h3>Lorem</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium nesciunt voluptate repudiandae ullam eveniet iusto deleniti, porro ab molestiae officia asperiores aut ex in sed quae! Reiciendis, dolores facere.</p>
+                </div>
+
+            </div>
+            <div class="features-item">
+                <div class="features-item-head"> <img
+                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-any-file.svg"
+                        alt=""> </div>
+                <div class="features-item-body  mt-2">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse tenetur perspiciatis quo labore dolorem eligendi, molestiae eveniet, voluptatum error porro consequuntur, voluptates et perferendis modi quisquam quaerat voluptatibus amet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="productive">
+            <div class="productive-img"> <img
+                    src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png"
+                    alt=""> </div>
+
+            <div class="productive-content">
+
+                <h2>Stay productive, wherever you are</h2>
+
+                <p class="lg-p"> Never let location be an issue when accessing your files. Fylo has you covered for all
+                    of your file storage needs. </p>
+
+                <p class="lg-p"> Securely share files and folders with friends, family and colleagues for live
+                    collaboration. No email attachments required.
+                </p>
+                <p class="lg-p"> <a class="content-link" href="#">See how Fylo works <i
+                            class="fas fa-arrow-alt-circle-right"></i></a> </p>
+            </div>
+        </section>
+
+
+
+        <section class="price-table">
+            <div class="pricing-table">
+                <h2 class="pricing-table__header">- BASIC -</h2>
+                <h3 class="pricing-table__price">£50</h3>
+                <a target="_blank" class="pricing-table__button" href="#">
+                    Join Now!
+                </a>
+                <ul class="pricing-table__list">
+                    <li>30 day free trial</li>
+                    <li>50gb storage space</li>
+                    <li>20% discount</li>
+                    <li class="ni">24 hour support</li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4>Ansøgning</h4>
-                <ul>
-                <li><a href="https://drive.google.com/file/d/12EfjJWSXSXaKloszJ9rqg9z36azN8ptu/view?usp=sharing">Mit CV</a></li>
-                <li><a href="https://drive.google.com/file/d/1pcWj72gi935eDQbW-79pphp5eKeXeDvI/view?usp=sharing">Min Ansøgning</a></li>
-                <li><a href="https://drive.google.com/file/d/1KVyrFxYPIH_G8Sr9nI5c3yUXD2HJoDYD/view?usp=sharing">Mit CV og Ansøgning</a></li>
+            <div class="pricing-table featured-table">
+                <h2 class="pricing-table__header">- BUSINESS -</h2>
+                <h3 class="pricing-table__price">£80</h3>
+                <a target="_blank" class="pricing-table__button" href="#">
+                    Join Now!
+                </a>
+                <ul class="pricing-table__list">
+                    <li>40 day free trial</li>
+                    <li>100gb storage space</li>
+                    <li>25% discount</li>
+                    <li>24 hour support</li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4>Kontakt</h4>
-                <ul>
-                    <li><a href="mailto:Simonhovmand@gmail.com">Simonhovmand@gmail.com</a></li>
-                    <li><a href="tel:+4521392439">21 39 24 39</a></li>
-                    <li><a href="https://www.google.com/maps/@55.2631308,11.5259219,17.25z">Nyvej 36</a></li>
-                    <li><a href="https://www.google.com/maps/@55.2631308,11.5259219,17.25z">4262, Sandved</a></li>
+            <div class="pricing-table">
+                <h2 class="pricing-table__header">- PREMIUM -</h2>
+                <h3 class="pricing-table__price">£130</h3>
+                <a target="_blank" class="pricing-table__button" href="#">
+                    Join Now!
+                </a>
+                <ul class="pricing-table__list">
+                    <li>50 day free trial</li>
+                    <li>200gb storage space</li>
+                    <li>40% discount</li>
+                    <li>24 hour support</li>
                 </ul>
             </div>
-        </div>
+            <div class="pricing-table">
+                <h2 class="pricing-table__header">- PREMIUM -</h2>
+                <h3 class="pricing-table__price">£130</h3>
+                <a target="_blank" class="pricing-table__button" href="#">
+                    Join Now!
+                </a>
+                <ul class="pricing-table__list">
+                    <li>50 day free trial</li>
+                    <li>200gb storage space</li>
+                    <li>40% discount</li>
+                    <li>24 hour support</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="testimonial-item">
+                <div class="testimonial-item-text">
+                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
+                        team has become a well-oiled collaboration machine.</p>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    <div class="testimonial-item-reviewer-img"> <img
+                            src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/profile-1.jpg"
+                            alt=""></div>
+                    <div class="ml-1 testimonial-item-reviewer-text">
+                        <h4>Anders Rehmeier</h4>
+                        <p>Founder & CEO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-item-text">
+                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
+                        team has become a well-oiled collaboration machine.</p>
+                </div>
+                <div class="testimonial-item-reviewer">
+                    <div class="testimonial-item-reviewer-img"> <img
+                            src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/profile-2.jpg"
+                            alt=""></div>
+                    <div class="ml-1 testimonial-item-reviewer-text">
+                        <h4> Bruce McKenzie </h4>
+                        <p>Founder & CEO, Huddle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+
+            <div class="contact-info-logo"> <img
+                    src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/logo.svg"
+                    alt=""> </div>
+            <div class="contact-info-location">
+                <div class="contact-info-location-item">
+                    <i class="fa-solid fa-location-dot img-footer"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua</p>
+                </div>
+            </div>
+            <div class="contact-info-contacts">
+                <div class="contact-info-contacts-item">
+                    <i class="fa-solid fa-phone img-footer"></i>
+                    <p>example@fylo.com</p>
+                </div>
+                <div class="contact-info-contacts-item ">
+                    <i class="fa-solid fa-envelope img-footer"></i>
+                    <p>example@fylo.com</p>
+                </div>
+
+            </div>
+            <nav class="contact-info-links">
+                <ul class="contact-info-links-list">
+                    <li> <a href="#">About Us</a> </li>
+                    <li> <a href="#">Jobs</a> </li>
+                    <li> <a href="#">Press</a> </li>
+                    <li> <a href="#">Blog</a> </li>
+                </ul>
+                <ul class="contact-info-links-list">
+                    <li> <a href="#">Contact Us</a> </li>
+                    <li> <a href="#">Terms</a> </li>
+                    <li> <a href="#">Privacy</a> </li>
+                </ul>
+            </nav>
+            <div class="contact-info-social-links">
+                <a class="icon-link" href="#">
+                    <div class="contact-info-social-link-item flex-center"> <i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a class="icon-link" href="#">
+                    <div class="contact-info-social-link-item flex-center"> <i class="fab fa-twitter"></i></div>
+                </a>
+                <a class="icon-link" href="#">
+                    <div class="contact-info-social-link-item flex-center"> <i class="fab fa-instagram"></i> </div>
+                </a>
+            </div>
+
+
+        </section>
+
+
     </footer>
+
+
 </body>
+
 </html>
