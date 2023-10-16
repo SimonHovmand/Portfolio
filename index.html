@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SimonHovmand.dk</title>
+    <link rel="icon" type="image/png" href="images/SH.png"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -16,8 +17,8 @@
     <header>
         <div class="navbar" id="navbar">
             <div class="name">
-                <a href="#"><img id="navbar-img" src="website-development.webp"></a>
-                <li><a href="#">GreenState.Tech</a></li>
+                <a href="#"><img id="navbar-img" src="images/SH.png"></a>
+                <li><a href="#">Simon <span>Hovmand</span></a></li>
             </div>
             <div class="hamburger">
                 <div class="line1"></div>
@@ -25,84 +26,86 @@
                 <div class="line3"></div>
             </div>
             <ul class="navbar-links">
-                <li><a href="index.html"><i class="fas fa-house"></i> Hjem</a></li>
-                <li><a href="info.html"><i class="fa-solid fa-list"></i> Info</a></li>
-                <li><a href="regler.html"><i class="fa-solid fa-clipboard"></i> Om os</a></li>
+                <li><a href="#intro"><i class="fas fa-house"></i> Hjem</a></li>
+                <li><a href="#features"><i class="fa-solid fa-list"></i> Info</a></li>
+                <li><a href="#aboutme"><i class="fa-solid fa-clipboard"></i> Om mig</a></li>
+                <li><a href="#education"><i class="fa-solid fa-clipboard"></i> Erfaring</a></li>
             </ul>
         </div>
     </header>
-    <script src="script.js"></script>
-
 
     <main>
-        <section class="intro">
-
+        <section class="intro" id="intro">
             <div class="intro-content">
-                <h1>GreenState Tech</h1>
+                <h1>Simon <span>Hovmand</span></h1>
 
-                <h3>We shape the future</h3>
+                <h2>Jeg er <span class="multiple-text"></span></h2>
 
+                <button class="button active">Mit CV</button>
 
-                </p>
-                <p class="lg-p"> <a class="content-link" href="#">Se hvad vi tilbyder <i
-                            class="fas fa-arrow-alt-circle-right"></i></a> </p>
+                <div class="social-links">
+                    <a class="social-link flex-center" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="social-link flex-center" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="social-link flex-center" href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <div class="intro-img"> <img src="website-development.webp" alt=""> </div>
+            <div class="intro-img"> <img src="images/website-development.webp" alt=""> </div>
 
         </section>
 
-
-        <section class="features">
-
-            <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-access-anywhere.svg"
-                        alt=""> </div>
-                <div class="features-item-body  mt-2">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos officia itaque sunt quisquam, enim sed temporibus excepturi similique ipsa veritatis ullam iusto! Nihil id harum voluptates minima porro cumque?</p>
-                </div>
-            </div>
-
-            <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-security.svg"
-                        alt=""> </div>
-                <div class="features-item-body mt-2">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quos quisquam magni, necessitatibus alias vero ullam? Facilis sapiente, temporibus facere aliquid unde quos nisi est assumenda asperiores nulla at dicta.</p>
-                </div>
-
-            </div>
-            <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-collaboration.svg"
-                        alt=""> </div>
-                <div class="features-item-body  mt-2">
-                    <h3>Lorem</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium nesciunt voluptate repudiandae ullam eveniet iusto deleniti, porro ab molestiae officia asperiores aut ex in sed quae! Reiciendis, dolores facere.</p>
-                </div>
-
-            </div>
-            <div class="features-item">
-                <div class="features-item-head"> <img
-                        src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/icon-any-file.svg"
-                        alt=""> </div>
-                <div class="features-item-body  mt-2">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse tenetur perspiciatis quo labore dolorem eligendi, molestiae eveniet, voluptatum error porro consequuntur, voluptates et perferendis modi quisquam quaerat voluptatibus amet.</p>
+        <section id="features">
+            <div class="container">
+                <div class="col">
+                    <div class="row">
+                        <div class="row-ic">
+                            <i class="fa-solid fa-shield fa-2x"></i>
+                        </div>
+                        <div class="row-el">
+                            <span>Gymnast</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse tenetur perspiciatis
+                                quo labore dolorem eligendi, molestiae eveniet, voluptatum error porro consequuntur,
+                                voluptates et perferendis modi quisquam quaerat voluptatibus amet.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-ic">
+                            <i class="fa-solid fa-car fa-2x"></i>
+                        </div>
+                        <div class="row-el">
+                            <span>Gymnastik indstuktør</span>
+                            <p>test test test</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-ic">
+                            <i class="fa-solid fa-gear fa-2x"></i>
+                        </div>
+                        <div class="row-el">
+                            <span>Lærer- og SFO vikar</span>
+                            <p>test test test</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-ic">
+                            <i class="fa-brands fa-spotify fa-2x"></i>
+                        </div>
+                        <div class="row-el">
+                            <span>5000000+</span>
+                            <p>test test test</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="productive">
-            <div class="productive-img"> <img
+        <section class="about-me" id="aboutme">
+            <div class="about-me-img"> <img
                     src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png"
                     alt=""> </div>
 
-            <div class="productive-content">
+            <div class="about-me-content">
 
-                <h2>Stay productive, wherever you are</h2>
+                <h2>About <span>me</span>, wherever you are</h2>
 
                 <p class="lg-p"> Never let location be an issue when accessing your files. Fylo has you covered for all
                     of your file storage needs. </p>
@@ -110,159 +113,146 @@
                 <p class="lg-p"> Securely share files and folders with friends, family and colleagues for live
                     collaboration. No email attachments required.
                 </p>
-                <p class="lg-p"> <a class="content-link" href="#">See how Fylo works <i
-                            class="fas fa-arrow-alt-circle-right"></i></a> </p>
             </div>
         </section>
 
 
+        <!-- education section design -->
+        <section class="education" id="education">
+            <h2 class="heading">Min <span>Erfaring</span></h2>
 
-        <section class="price-table">
-            <div class="pricing-table">
-                <h2 class="pricing-table__header">- BASIC -</h2>
-                <h3 class="pricing-table__price">£50</h3>
-                <a target="_blank" class="pricing-table__button" href="#">
-                    Join Now!
-                </a>
-                <ul class="pricing-table__list">
-                    <li>30 day free trial</li>
-                    <li>50gb storage space</li>
-                    <li>20% discount</li>
-                    <li class="ni">24 hour support</li>
-                </ul>
-            </div>
-            <div class="pricing-table featured-table">
-                <h2 class="pricing-table__header">- BUSINESS -</h2>
-                <h3 class="pricing-table__price">£80</h3>
-                <a target="_blank" class="pricing-table__button" href="#">
-                    Join Now!
-                </a>
-                <ul class="pricing-table__list">
-                    <li>40 day free trial</li>
-                    <li>100gb storage space</li>
-                    <li>25% discount</li>
-                    <li>24 hour support</li>
-                </ul>
-            </div>
-            <div class="pricing-table">
-                <h2 class="pricing-table__header">- PREMIUM -</h2>
-                <h3 class="pricing-table__price">£130</h3>
-                <a target="_blank" class="pricing-table__button" href="#">
-                    Join Now!
-                </a>
-                <ul class="pricing-table__list">
-                    <li>50 day free trial</li>
-                    <li>200gb storage space</li>
-                    <li>40% discount</li>
-                    <li>24 hour support</li>
-                </ul>
-            </div>
-            <div class="pricing-table">
-                <h2 class="pricing-table__header">- PREMIUM -</h2>
-                <h3 class="pricing-table__price">£130</h3>
-                <a target="_blank" class="pricing-table__button" href="#">
-                    Join Now!
-                </a>
-                <ul class="pricing-table__list">
-                    <li>50 day free trial</li>
-                    <li>200gb storage space</li>
-                    <li>40% discount</li>
-                    <li>24 hour support</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="testimonial">
-            <div class="testimonial-item">
-                <div class="testimonial-item-text">
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
-                        team has become a well-oiled collaboration machine.</p>
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title"><span>Uddannelse</span></h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> August 2020 - Juni 2021
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Næstved</div>
+                                <h4>10 Klasse</h4>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> August 2021 - Februar 2022
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Slagelse</div>
+                                <h4>Grundforløb 1</h4>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> Februar 2022 - Juni 2022
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Slagelse</div>
+                                <h4>Grundforløb 2</h4>
+                                <p>Jeg gik i 2022 på grundforløb 2 i Slagelse, hvor jeg tog Data- og
+                                    kommunikationsuddannelsen med EUX.</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> August 2022 - Juli 2023
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Ringsted</div>
+                                <h4>Hovedforløb 1</h4>
+                                <p>Jeg har taget en EUX hovedforløb 1 som datatekniker med speciale i programmering.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-item-reviewer">
-                    <div class="testimonial-item-reviewer-img"> <img
-                            src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/profile-1.jpg"
-                            alt=""></div>
-                    <div class="ml-1 testimonial-item-reviewer-text">
-                        <h4>Anders Rehmeier</h4>
-                        <p>Founder & CEO</p>
+
+                <div class="education-column">
+                    <h3 class="title"><span>Erhverserfaring</span></h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> September 2019 - Juni 2020
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> Sandved</div>
+                                <h4>Avisbud, FK Distribution</h4>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> Januar 2021 - August 2022
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> Fuglebjerg</div>
+                                <h4>Servicemedarbejder, SuperBrugsen</h4>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> Januar 2023 - September 2023
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> Kalundborg</div>
+                                <h4>NovoNordisk A/S</h4>
+                                <p>Jeg fik en lærerplads hos NovoNordisk A/S i Kalundborg som softwareprogrammør.</p>
+                                <p>Jeg fandt dog ud af at jobbet nok alligevel ikke var noget for mig, og valgte derfor
+                                    at opsige min lærerplads kontrakt og afmelde mig uddannelsen.</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i> September 2023 - Nuværende
+                                </div>
+                                <div class="place"><i class="fa-solid fa-location-pin"></i> Sandved & Hyllinge</div>
+                                <h4>Lærer- og SFOvikar</h4>
+                                <p>Jeg er på nuværende tidspunkt lærer- og SFOvikar på Vesterlandsskolen afd. Grønbro og
+                                    afd. Hyllinge</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="testimonial-item">
-                <div class="testimonial-item-text">
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
-                        team has become a well-oiled collaboration machine.</p>
-                </div>
-                <div class="testimonial-item-reviewer">
-                    <div class="testimonial-item-reviewer-img"> <img
-                            src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/profile-2.jpg"
-                            alt=""></div>
-                    <div class="ml-1 testimonial-item-reviewer-text">
-                        <h4> Bruce McKenzie </h4>
-                        <p>Founder & CEO, Huddle</p>
+        <footer>
+            <section class="contact-info">
+                <div class="contact-info-location">
+                    <div class="contact-info-location-item">
+                        <i class="fa-solid fa-location-dot img-footer"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="contact-info-contacts">
+                    <div class="contact-info-contacts-item">
+                        <i class="fa-solid fa-phone img-footer"></i>
+                        <a href="tel:21392439">21 39 24 39</a>
+                    </div>
+                    <div class="contact-info-contacts-item">
+                        <i class="fa-solid fa-envelope img-footer"></i>
+                        <a href="mailto:someone@example.com">simonhovmand@gmail.com</a>
+                    </div>
 
-    <footer>
-        <section class="contact-info">
-
-            <div class="contact-info-logo"> <img
-                    src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/logo.svg"
-                    alt=""> </div>
-            <div class="contact-info-location">
-                <div class="contact-info-location-item">
-                    <i class="fa-solid fa-location-dot img-footer"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua</p>
                 </div>
-            </div>
-            <div class="contact-info-contacts">
-                <div class="contact-info-contacts-item">
-                    <i class="fa-solid fa-phone img-footer"></i>
-                    <p>example@fylo.com</p>
+                <nav class="contact-info-links">
+                    <ul class="contact-info-links-list">
+                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="#">Jobs</a> </li>
+                        <li> <a href="#">Press</a> </li>
+                        <li> <a href="#">Blog</a> </li>
+                    </ul>
+                </nav>
+                <div class="contact-info-social-links">
+                    <a class="icon-link" href="#">
+                        <div class="social-link flex-center"> <i class="fab fa-facebook-f"></i></div>
+                    </a>
+                    <a class="icon-link" href="#">
+                        <div class="social-link flex-center"> <i class="fab fa-twitter"></i></div>
+                    </a>
+                    <a class="icon-link" href="#">
+                        <div class="social-link flex-center"> <i class="fab fa-instagram"></i> </div>
+                    </a>
                 </div>
-                <div class="contact-info-contacts-item ">
-                    <i class="fa-solid fa-envelope img-footer"></i>
-                    <p>example@fylo.com</p>
-                </div>
+            </section>
+        </footer>
+        <!-- typed js -->
+        <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
 
-            </div>
-            <nav class="contact-info-links">
-                <ul class="contact-info-links-list">
-                    <li> <a href="#">About Us</a> </li>
-                    <li> <a href="#">Jobs</a> </li>
-                    <li> <a href="#">Press</a> </li>
-                    <li> <a href="#">Blog</a> </li>
-                </ul>
-                <ul class="contact-info-links-list">
-                    <li> <a href="#">Contact Us</a> </li>
-                    <li> <a href="#">Terms</a> </li>
-                    <li> <a href="#">Privacy</a> </li>
-                </ul>
-            </nav>
-            <div class="contact-info-social-links">
-                <a class="icon-link" href="#">
-                    <div class="contact-info-social-link-item flex-center"> <i class="fab fa-facebook-f"></i></div>
-                </a>
-                <a class="icon-link" href="#">
-                    <div class="contact-info-social-link-item flex-center"> <i class="fab fa-twitter"></i></div>
-                </a>
-                <a class="icon-link" href="#">
-                    <div class="contact-info-social-link-item flex-center"> <i class="fab fa-instagram"></i> </div>
-                </a>
-            </div>
-
-
-        </section>
-
-
-    </footer>
-
-
+        <!-- custom js -->
+        <script src="script.js"></script>
 </body>
-
 </html>
