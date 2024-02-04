@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimonHovmand.dk</title>
-    <link rel="icon" type="image/png" href="images/SH.png"/>
+    <link rel="icon" type="image/png" href="images/SH.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -14,32 +14,73 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar" id="navbar">
-            <div class="name">
-                <a href="#"><img id="navbar-img" src="images/SH.png"></a>
-                <li><a href="#">Simon <span>Hovmand</span></a></li>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_data">
+                <a href="index.html" class="nav_logo">
+                    <img class="logo" src="images/SH.png" alt="">
+                    <h3>Simon <span>Hovmand</span></h3>
+                </a>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="nav_burger fa-solid fa-bars "></i>
+                    <i class="nav_close fa-solid fa-xmark"></i>
+                </div>
             </div>
-            <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li><a href="#intro" class="nav_link nav_li active">Home</a></li>
+
+                    <li><a href="#info" class="nav_link nav_li">Info</a></li>
+
+                    <li><a href="#aboutme" class="nav_link nav_li">Om mig</a></li>
+
+                    <li><a href="#education" class="nav_link nav_li">Erfaring</a></li>
+
+                    <li><a href="#skills" class="nav_link nav_li">Skills</a></li>
+
+                    <li><a href="#testim" class="nav_link nav_li">Udtalelser</a></li>
+
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            <a>Projekter <i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li><a href="#portfolio" class="dropdown_link nav_li">Seneste projekter</a></li>
+
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown_subitem">
+                                <div class="dropdown_link">
+                                    <a>Alle projekter <i class="fa-solid fa-angle-right"></i></a>
+                                </div>
+                                <ul class="dropdown_submenu">
+                                    <li><a href="#section7" class="dropdown_sublink nav_li">Documents</a></li>
+
+                                    <li><a href="#section8" class="dropdown_sublink nav_li">Payments</a></li>
+
+                                    <li><a href="#section9" class=" dropdown_sublink nav_li">Refunds</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#footer" class="nav_link nav_li">Kontakt</a></li>
+                </ul>
             </div>
-            <ul class="navbar-links">
-                <li><a href="#intro"><i class="fas fa-house"></i> Hjem</a></li>
-                <li><a href="#features"><i class="fa-solid fa-list"></i> Info</a></li>
-                <li><a href="#aboutme"><i class="fa-solid fa-clipboard"></i> Om mig</a></li>
-                <li><a href="#education"><i class="fa-solid fa-clipboard"></i> Erfaring</a></li>
-            </ul>
-        </div>
+        </nav>
     </header>
 
     <main>
+
+        <!-- intro -->
         <section class="intro" id="intro">
             <div class="intro-content">
                 <h1>Simon <span>Hovmand</span></h1>
-
-                <h2>Jeg er <span class="multiple-text"></span></h2>
 
                 <button class="button active">Mit CV</button>
 
@@ -50,209 +91,407 @@
                 </div>
             </div>
             <div class="intro-img"> <img src="images/website-development.webp" alt=""> </div>
-
         </section>
+    </main>
 
-        <section id="features">
-            <div class="container">
-                <div class="col">
-                    <div class="row">
-                        <div class="row-ic">
-                            <i class="fa-solid fa-shield fa-2x"></i>
-                        </div>
-                        <div class="row-el">
-                            <span>Gymnast</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse tenetur perspiciatis
-                                quo labore dolorem eligendi, molestiae eveniet, voluptatum error porro consequuntur,
-                                voluptates et perferendis modi quisquam quaerat voluptatibus amet.</p>
+    <!-- info -->
+    <section id="info">
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                    <div class="row-ic">
+                        <i class="fa-solid fa-person-falling fa-2x"></i>
+                    </div>
+                    <div class="row-el">
+                        <span>Gymnast</span>
+                        <p>Jeg har altid været meget fysisk aktiv, <br> og jeg har gået til gymnastik i omkring 14
+                            år og har altid haft en stor interesse for
+                            gymnastik.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-ic">
+                        <i class="fa-solid fa-dumbbell fa-2x"></i>
+                    </div>
+                    <div class="row-el">
+                        <span>Gymnastik indstuktør</span>
+                        <p>Igennem gymnastikken er jeg blevet gymnastik indstuktør og har været det i omkring 6 år.
+                            <br>Jeg elsker at lærer fra mig og se børnenes udvikling. <br>Jeg har med mange
+                            forskellige aldre at gøre, helt fra 6 år og til 18 årige
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-ic">
+                        <i class="fa-solid fa-link-slash fa-2x"></i>
+                    </div>
+                    <div class="row-el">
+                        <span>Idrætsforening</span>
+                        <p>Udover at jeg er gymnastik indstuktør i vores flere strenget idrætsforening, <br> hjælper
+                            jeg også meget til i de andre afdelinger. <br> Jeg elsker at hjælpe og gøre gavn hvor
+                            jeg kan</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row-ic">
+                        <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                    </div>
+                    <div class="row-el">
+                        <span>Lærer- og SFO vikar</span>
+                        <p>Til dagligt arbejder jeg som Lærer- og SFO vikar, jeg er tilknyttet 2 lokale skoler som
+                            jeg har timer på. <br> Jeg nyder generelt at arbejde med mennesker og hjælpe hvor jeg
+                            kan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section class="about-me" id="aboutme">
+        <div class="about-me-img"> <img
+                src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png"
+                alt=""> </div>
+
+        <div class="about-me-content">
+
+            <h2>About <span>me</span>, wherever you are</h2>
+
+            <p class="lg-p"> Never let location be an issue when accessing your files. Fylo has you covered for all
+                of your file storage needs. </p>
+
+            <p class="lg-p"> Securely share files and folders with friends, family and colleagues for live
+                collaboration. No email attachments required.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- education -->
+    <section class="education" id="education">
+        <h2>Min <span>Erfaring</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title"><span>Uddannelse</span></h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Aug 2020 - Jun 2021</div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Næstved</div>
+                            <a href="https://drive.google.com/file/d/1LxJuvvjUmfMd-spcHkuIHrOFAcvGQN53/view?usp=sharing" target="_blank" class="bevis">Se bevis</a>
+                            <h3>10 Klasse</h3>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="row-ic">
-                            <i class="fa-solid fa-car fa-2x"></i>
-                        </div>
-                        <div class="row-el">
-                            <span>Gymnastik indstuktør</span>
-                            <p>test test test</p>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Aug 2021 - Fed 2022</div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Slagelse</div>
+                            <h3>Grundforløb 1</h3>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="row-ic">
-                            <i class="fa-solid fa-gear fa-2x"></i>
-                        </div>
-                        <div class="row-el">
-                            <span>Lærer- og SFO vikar</span>
-                            <p>test test test</p>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Feb 2022 - Jun 2022</div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Slagelse</div>
+                            <a href="https://drive.google.com/file/d/1Pl0dbkzESSG2MAZuf18NVcs3xwVbXXaq/view?usp=sharing" target="_blank" class="bevis">Se bevis</a>
+                            <h3>Grundforløb 2</h3>
+                            <p>Jeg gik i 2022 på grundforløb 2 i Slagelse, hvor jeg tog Data- og
+                                kommunikationsuddannelsen med EUX.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="row-ic">
-                            <i class="fa-brands fa-spotify fa-2x"></i>
-                        </div>
-                        <div class="row-el">
-                            <span>5000000+</span>
-                            <p>test test test</p>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Aug 2022 - Jul 2023</div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Ringsted</div>
+                            <a href="https://drive.google.com/file/d/1ngS5Ri-tQWenryeTqy_OsC6U2tGbW1DF/view?usp=sharing" target="_blank" class="bevis">Se bevis</a>
+                            <h3>Hovedforløb 1</h3>
+                            <p>Jeg har taget en EUX hovedforløb 1 som datatekniker med speciale i programmering.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="about-me" id="aboutme">
-            <div class="about-me-img"> <img
-                    src="https://hannahshiels.github.io/front-end-mentor/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png"
-                    alt=""> </div>
-
-            <div class="about-me-content">
-
-                <h2>About <span>me</span>, wherever you are</h2>
-
-                <p class="lg-p"> Never let location be an issue when accessing your files. Fylo has you covered for all
-                    of your file storage needs. </p>
-
-                <p class="lg-p"> Securely share files and folders with friends, family and colleagues for live
-                    collaboration. No email attachments required.
-                </p>
-            </div>
-        </section>
-
-
-        <!-- education section design -->
-        <section class="education" id="education">
-            <h2 class="heading">Min <span>Erfaring</span></h2>
-
-            <div class="education-row">
-                <div class="education-column">
-                    <h3 class="title"><span>Uddannelse</span></h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> August 2020 - Juni 2021
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Næstved</div>
-                                <h4>10 Klasse</h4>
+            <div class="education-column">
+                <h3 class="title"><span>Erhverserfaring</span></h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Sep 2019 - Jun 2020
                             </div>
-                        </div>
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> August 2021 - Februar 2022
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Slagelse</div>
-                                <h4>Grundforløb 1</h4>
-                            </div>
-                        </div>
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> Februar 2022 - Juni 2022
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Slagelse</div>
-                                <h4>Grundforløb 2</h4>
-                                <p>Jeg gik i 2022 på grundforløb 2 i Slagelse, hvor jeg tog Data- og
-                                    kommunikationsuddannelsen med EUX.</p>
-                            </div>
-                        </div>
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> August 2022 - Juli 2023
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> ZBC Ringsted</div>
-                                <h4>Hovedforløb 1</h4>
-                                <p>Jeg har taget en EUX hovedforløb 1 som datatekniker med speciale i programmering.</p>
-                            </div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> Sandved</div>
+                            <h3>Avisbud, FK Distribution</h3>
                         </div>
                     </div>
-                </div>
-
-                <div class="education-column">
-                    <h3 class="title"><span>Erhverserfaring</span></h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> September 2019 - Juni 2020
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> Sandved</div>
-                                <h4>Avisbud, FK Distribution</h4>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Jan 2021 - Aug 2022
                             </div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> Fuglebjerg</div>
+                            <h3>Servicemedarbejder, SuperBrugsen</h3>
                         </div>
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> Januar 2021 - August 2022
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> Fuglebjerg</div>
-                                <h4>Servicemedarbejder, SuperBrugsen</h4>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Jan 2023 - Sep 2023
                             </div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> Kalundborg</div>
+                            <h3>NovoNordisk A/S</h3>
+                            <p>Jeg fik en lærerplads hos NovoNordisk A/S i Kalundborg som softwareprogrammør.</p>
+                            <p>Jeg fandt dog ud af at jobbet nok alligevel ikke var noget for mig, og valgte derfor
+                                at opsige min lærerplads kontrakt og afmelde mig uddannelsen.</p>
                         </div>
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> Januar 2023 - September 2023
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> Kalundborg</div>
-                                <h4>NovoNordisk A/S</h4>
-                                <p>Jeg fik en lærerplads hos NovoNordisk A/S i Kalundborg som softwareprogrammør.</p>
-                                <p>Jeg fandt dog ud af at jobbet nok alligevel ikke var noget for mig, og valgte derfor
-                                    at opsige min lærerplads kontrakt og afmelde mig uddannelsen.</p>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> Sep 2023 - Nuværende
                             </div>
-                        </div>
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i> September 2023 - Nuværende
-                                </div>
-                                <div class="place"><i class="fa-solid fa-location-pin"></i> Sandved & Hyllinge</div>
-                                <h4>Lærer- og SFOvikar</h4>
-                                <p>Jeg er på nuværende tidspunkt lærer- og SFOvikar på Vesterlandsskolen afd. Grønbro og
-                                    afd. Hyllinge</p>
-                            </div>
+                            <div class="place"><i class="fa-solid fa-location-pin"></i> Sandved & Hyllinge</div>
+                            <h3>Lærer- og SFOvikar</h3>
+                            <p>Jeg er på nuværende tidspunkt lærer- og SFOvikar på Vesterlandsskolen afd. Grønbro og
+                                afd. Hyllinge</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <!-- skills -->
+    <section class="skills" id="skills">
+
+        <!-- tag-list -->
+        <div class="tag-list">
+            <h2>Programmerings <span>Erfaring</span></h2>
+            <div class="inner">
+                <div class="tag"><span>#</span>HTML</div>
+                <div class="tag"><span>#</span>CSS</div>
+                <div class="tag"><span>#</span>JS</div>
+
+                <div class="tag"><span>#</span>C#</div>
+                <div class="tag"><span>#</span>PHP</div>
+                <div class="tag"><span>#</span>Python</div>
+                <div class="tag"><span>#</span>HTML</div>
+                <div class="tag"><span>#</span>CSS</div>
+                <div class="tag"><span>#</span>JS</div>
+
+                <div class="tag"><span>#</span>C#</div>
+                <div class="tag"><span>#</span>PHP</div>
+                <div class="tag"><span>#</span>Python</div>
+            </div>
+            <div class="fade"></div>
+        </div>
+
+        <div class="skill-row">
+            <div class="skill-column">
+                <div class="skills-box">
+                    <h3 class="title"><span>Backend</span></h3>
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">C#</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">PHP</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-column">
+                <div class="skills-box">
+                    <h3 class="title"><span>Frontend</span></h3>
+                    <div class="skill">
+                        <div class="skill-name">html</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">css</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">jS</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testim -->
+
+    <section id="testim" class="testim">
+        <div class="testim-cover">
+            <div class="wrap">
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+                    <div class="active">
+                        <h2>Lorem P. Ipsum</h2>
+                        <h3>Mr. Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation.</p>
+                    </div>
+                    <div>
+                        <h2>Mr. Lorem Ipsum</h2>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud.</p>
+                    </div>
+                    <div>
+                        <h2>Lorem Ipsum</h2>
+                        <h3>Mr. Lorem </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                    </div>
+                    <div>
+                        <h2>Lorem De Ipsum</h2>
+                        <h3>Mr. </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div>
+                        <h2>Ms. Lorem R. Ipsum</h2>
+                        <h3>Mr. Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Seneste <span>projekter</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/photo1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/photo2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/photo3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/photo4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/photo5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/photo6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <section class="footer-info">
+            <nav class="footer-info-links">
+                <ul class="footer-info-links-list">
+                    <li><a href="#intro" class="footer-link">Home</a></li>
+                    <li><a href="#info" class="footer-link">Info</a></li>
+                    <li><a href="#aboutme" class="footer-link">Om mig</a></li>
+                    <li><a href="#education" class="footer-link">Erfaring</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#testim" class="footer-link">Udtalelser</a></li>
+                </ul>
+            </nav>
+            <div class="footer-info-contact">
+                <div class="footer-info-contact-item">
+                    <i class="fa-solid fa-phone img-footer"></i>
+                    <a href="tel:21392439">21 39 24 39</a>
+                </div>
+                <div class="footer-info-contact-item">
+                    <i class="fa-solid fa-envelope img-footer"></i>
+                    <a href="mailto:simonhovmand@gmail.com">simonhovmand@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-info-social-links">
+                <a class="icon-link" href="#">
+                    <div class="social-link flex-center"> <i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a class="icon-link" href="#">
+                    <div class="social-link flex-center"> <i class="fab fa-twitter"></i></div>
+                </a>
+                <a class="icon-link" href="#">
+                    <div class="social-link flex-center"> <i class="fab fa-instagram"></i> </div>
+                </a>
+            </div>
+            <div class="footer-info-copyright">
+                <div class="footer-info-copyright-item">
+                    <i class="fa-regular fa-copyright img-footer"></i>
+                    <p>Copyright &copy; 2023 By Simon Hovmand | All Rights Reserved.</p>
+                </div>
+            </div>
         </section>
+    </footer>
 
-        <footer>
-            <section class="contact-info">
-                <div class="contact-info-location">
-                    <div class="contact-info-location-item">
-                        <i class="fa-solid fa-location-dot img-footer"></i>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua</p>
-                    </div>
-                </div>
-                <div class="contact-info-contacts">
-                    <div class="contact-info-contacts-item">
-                        <i class="fa-solid fa-phone img-footer"></i>
-                        <a href="tel:21392439">21 39 24 39</a>
-                    </div>
-                    <div class="contact-info-contacts-item">
-                        <i class="fa-solid fa-envelope img-footer"></i>
-                        <a href="mailto:someone@example.com">simonhovmand@gmail.com</a>
-                    </div>
-
-                </div>
-                <nav class="contact-info-links">
-                    <ul class="contact-info-links-list">
-                        <li> <a href="#">About Us</a> </li>
-                        <li> <a href="#">Jobs</a> </li>
-                        <li> <a href="#">Press</a> </li>
-                        <li> <a href="#">Blog</a> </li>
-                    </ul>
-                </nav>
-                <div class="contact-info-social-links">
-                    <a class="icon-link" href="#">
-                        <div class="social-link flex-center"> <i class="fab fa-facebook-f"></i></div>
-                    </a>
-                    <a class="icon-link" href="#">
-                        <div class="social-link flex-center"> <i class="fab fa-twitter"></i></div>
-                    </a>
-                    <a class="icon-link" href="#">
-                        <div class="social-link flex-center"> <i class="fab fa-instagram"></i> </div>
-                    </a>
-                </div>
-            </section>
-        </footer>
-        <!-- typed js -->
-        <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-
-        <!-- custom js -->
-        <script src="script.js"></script>
+    <!-- custom js -->
+    <script src="script.js"></script>
 </body>
 </html>
