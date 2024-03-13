@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimonHovmand.dk</title>
+    <link rel="icon" type="image/png" href="../images/SH.png" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="Pnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_data">
+                <a href="index.html" class="nav_logo">
+                    <img class="logo" src="../images/SH.png" alt="">
+                    <h3>Simon <span>Hovmand</span></h3>
+                </a>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="nav_burger fa-solid fa-bars "></i>
+                    <i class="nav_close fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li><a href="#sec1" class="nav_link nav_li nav_active">Section1</a></li>
+
+                    <li><a href="#sec2" class="nav_link nav_li">Section2</a></li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            <a>Dropdown 1</a><i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li><a href="#sec3" class="dropdown_link nav_li">Section3</a></li>
+
+                            <!--=============== DROPDOWN SUBMENU 1 ===============-->
+                            <li class="dropdown_subitem">
+                                <div class="dropdown_link">
+                                    <a>Sub-dropdown 1</a><i class="fa-solid fa-angle-right"></i>
+                                </div>
+                                <ul class="dropdown_submenu">
+                                    <li><a href="#sec4" class="dropdown_sublink nav_li">Section4</a></li>
+
+                                    <li><a href="#sec5" class="dropdown_sublink nav_li">Section5</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#sec6" class="nav_link nav_li">Section6</a></li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            <a>Dropdown 2</a><i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li><a href="#sec7" class="dropdown_link nav_li">Section7</a></li>
+
+                            <!--=============== DROPDOWN SUBMENU 2 ===============-->
+                            <li class="dropdown_subitem">
+                                <div class="dropdown_link">
+                                    <a>Sub-dropdown 2</a><i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <ul class="dropdown_submenu" style="left: -200px;">
+                                    <li><a href="#sec8" class="dropdown_sublink nav_li">Section8</a></li>
+
+                                    <li><a href="#sec9" class="dropdown_sublink nav_li">Section9</a></li>
+
+                                    <li><a href="#sec10" class=" dropdown_sublink nav_li">Section10</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#sec11" class="nav_link nav_li">Section11</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sec1">
+        <h1>1</h1>
+    </section>
+    <section id="sec2">
+        <h1>2</h1>
+    </section>
+    <section id="sec3">
+        <h1>3</h1>
+    </section>
+    <section id="sec4">
+        <h1>4</h1>
+    </section>
+    <section id="sec5">
+        <h1>5</h1>
+    </section>
+    <section id="sec6">
+        <h1>6</h1>
+    </section>
+    <section id="sec7">
+        <h1>7</h1>
+    </section>
+    <section id="sec8">
+        <h1>8</h1>
+    </section>
+    <section id="sec9">
+        <h1>9</h1>
+    </section>
+    <section id="sec10">
+        <h1>10</h1>
+    </section>
+    <section id="sec11">
+        <h1>11</h1>
+    </section>
+
+    <script src="Pnav.js"></script>
+</body>
+
+</html>

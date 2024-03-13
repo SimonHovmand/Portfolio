@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+
 :root {
-    --primary-color-1: rgb(11, 12, 16);
+    --primary-color-1: #0b0c10;
     --primary-color-2: rgb(31, 40, 51);
 
-    --main-color: rgb(0, 171, 240);
+    --main-color: #00abf0;
     --main-color-alpha: rgba(0, 171, 240, .7);
     --white-color: rgb(237, 237, 237);
     --text-color: rgb(255, 255, 255);
@@ -26,6 +27,7 @@
 
     --header-height: 120px;
 }
+
 /* 
 :root {
     --primary-color-1: rgb(253,245,226);
@@ -227,7 +229,6 @@ section:first-child {
     align-items: center;
     width: 100%;
     justify-content: center;
-    align-items: center;
 }
 
 .intro img {
@@ -248,6 +249,10 @@ span {
 
 .intro h1:hover span {
     color: var(--text-color);
+}
+
+.intro-img {
+    filter: drop-shadow(5px 4px 5px var(--main-color));
 }
 
 
@@ -945,7 +950,7 @@ footer p {
 }
 
 .footer-info-contact-item:hover i,
-.footer-info-contact-item:hover a{
+.footer-info-contact-item:hover a {
     transition: .3s;
     color: var(--main-color);
 }

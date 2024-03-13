@@ -1,3 +1,61 @@
+:root {
+    --primary-color-1: #0b0c10;
+    --primary-color-2: rgb(31, 40, 51);
+
+    --main-color: #00abf0;
+    --main-color-alpha: rgba(0, 171, 240, .7);
+    --white-color: rgb(237, 237, 237);
+    --text-color: rgb(255, 255, 255);
+
+    --box-shadow: 0 2px 10px 2px rgb(0, 0, 0);
+    --social-bg-color: rgba(0, 171, 240, .25);
+
+    --linear-background: linear-gradient(90deg, rgba(0, 171, 240, .2), rgba(31, 40, 51, .1));
+
+    /*========== Font ==========*/
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-semi-bold: 600;
+
+    /*========== Nav ==========*/
+    --black-color: rgb(23, 28, 38);
+    --black-color-light: rgb(29, 35, 47);
+    --black-color-lighten: rgb(37, 43, 55);
+
+    --header-height: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: var(--primary-color-1);
+    color: var(--text-color);
+    font-family: var(--font-body);
+}   
+
+section:nth-child(odd) {
+    background-color: var(--primary-color-2);
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 250px 0;
+    text-align: center;
+}
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     margin-inline: 1.5rem;
@@ -296,7 +354,7 @@ li .nav_active {
 
     .dropdown_submenu {
         position: absolute;
-        left: -200px;
+        left: 200px;
         top: .5rem;
     }
 
